@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  
+  <div class="big-container">
+    <div class="left-side">
+      <h1>
+        Learn the Bible by playing games
+      </h1>
+      <p>
+        There are myriads upon myriads of fun and engaging games to choose from. 
+        It's hard for children to fully grasp the realities of the Bible by words, but by actions and visuals, 
+        they will lay a firm foundation for the Word for eternity.
+      </p>
+    </div>
+    <!--if the two sides are equal length, it isn't necessary to do classes... "left-side, right, etc;"-->
+    <div class="right-side">
+
+      <!-- within right side, there are two "boxes" because they are the same. 
+      we can add upon the "boxes" later with nuances (like blue or red)-->
+
+      <!-- a whole <a> tag could work for button, but you could also just do <div> <p> </div>-->
+      <a class="btn-blue" href="#">
+        <!--some, instead of span, use <strong>-->
+        <span class="white-bold">Try it free 7 days </span> then $1/mo. thereafter
+      </a>
+
+      <!-- some will put a class on the form itself -->
+      <div class="form-wrap">
+        <form id="form">
+          <div class="input-field">
+            <input type="text" id="firstname" placeholder="First Name">
+            <small></small>
+            <img src="images/icon-error.svg" alt="error">
+          </div>
+          <div class="input-field">
+            <input type="text" id="lastname"placeholder="Last Name">
+            <small></small>
+            <img src="images/icon-error.svg" alt="error">
+          </div>
+          <div class="input-field">
+            <input type="text" id="email" placeholder="Email Address">
+            <small></small>
+            <img src="images/icon-error.svg" alt="error">
+          </div>
+          <div class="input-field">
+            <input type="password" id="password" placeholder="Password">
+            <small></small>
+            <img src="images/icon-error.svg" alt="error">
+          </div>
+          
+          <!-- you could also use <button> tag...-->
+          <input class="btn-green" type="submit" value="Claim your free trial">
+        </form>
+
+        <!-- you could've used the <small> tag and within the form as opposed to outside-->
+        <p class="form-footer">
+          By clicking the button, you are agreeing to our <span class="red-bold">Terms and Services </span>
+        </p>
+      </div>
+      
+      
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    /* because overall the font is white, sometimes we do just color: white; */
+}
+
+.white-bold {
+    color: #fff;
+    font-weight: 700;
+}
+
+.red-bold {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+.big-container {
+    /*
+    
+    */
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* line-height... */
+    /* opacity */
+}
+
+/* ^^^
+another sort of wizardry you could do to make the pages 50% is this...
+.container > div {
+    flex: 1
+
+    so the direct divs of bigcontainer class...
+*/
+
+.big-container .left-side {
+    max-width: 50%;
+    padding: 0 100px;
+    color: #fff;    
+}
+.big-container .left-side h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+.big-container .right-side {
+    max-width: 50%;
+}
+
+/* buttons */
+a {
+    text-decoration: none;
+    display: block;
+}
+.btn-blue {
+    background-color: hsl(248, 32%, 49%);
+    color: #fff;
+    border: none;
+    padding: 20px 80px;
+    border-radius: 5px;
+    box-shadow: 0 7px 0px rgba(0,0,0,0.09), 0 10px 10px rgba(0,0,0,0.22);
+    
+}
+
+
+.form-wrap {
+    margin-top: 20px;
+    
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 7px 0px rgba(0,0,0,0.09), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.form-wrap .input-field {
+    position: relative;
+    padding: 10px 0;
+}
+
+.form-wrap img {
+    opacity: 0;
+    position: absolute;
+    top: 22px;
+    right: 15px;
+}
+.form-wrap .input-field.error img {
+    opacity: 1;
+}
+
+.form-wrap .input-field small {
+    color: hsl(0, 100%, 74%);
+    font-weight: 500;
+    position: absolute;
+    text-align: right;
+    bottom: -11px;
+    right: 0;
+    opacity: 0;
+}
+
+.form-wrap .input-field input {
+    display: block;
+    width: 100%;
+    padding: 15px 30px;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+}
+.form-wrap .input-field input:focus {
+    border: 1.3px solid hsl(248, 32%, 49%);
+    outline: none;
+}
+.form-wrap .input-field.error input{
+    border: 1px solid hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+}
+
+
+
+
+
+
+
+.form-wrap .input-field input::placeholder {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.form-wrap .btn-green {
+    display: block;
+    background-color: hsl(154, 59%, 51%);
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 30px;
+    border: hsl(154, 69%, 26%) 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    text-transform:uppercase;
+    border-bottom-width: 3px;
+    box-shadow: 0 2px hsl(154, 69%, 26%);
+    transition: transform 0.4 ease;
+}
+
+.form-wrap .btn-green:focus {
+    outline: none;
+}
+.form-wrap .btn-green:active {
+    border-bottom-width: 1px;
+    box-shadow: 0 0 hsl(154, 69%, 26%)
+    transform: translateY(2px);
+}
+
+.form-wrap .form-footer {
+    color: hsl(246, 25%, 77%);
+    font-size: 9px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        text-align: center;
+    }
+    p { 
+        text-align: center;
+    }
+    .big-container {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30%;
+    }
+    .big-container .left-side {
+        
+        margin-top: 30%;
+        padding: 0;
+        color: #fff;    
+        max-width: 80%;
+        
+    }
+    .big-container .left-side h1 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .big-container .left-side p {
+        
+        font-size: 12px;
+        margin-bottom: 40px;
+        
+    }
+    .big-container .right-side {
+        max-width: 80%;
+    }
+
+    .form-wrap {
+        padding: 0;
+    }
+
+    .btn-blue {
+        background-color: hsl(248, 32%, 49%);
+        color: #fff;
+        border: none;
+        padding: 20px 10px;
+        border-radius: 5px;
+        box-shadow: 0 7px 0px rgba(0,0,0,0.09), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    .form-wrap {
+        margin-top: 30px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 7px 0px rgba(0,0,0,0.09), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    
+.form-wrap .input-field {
+    margin-top: 10px;
+}
+
+.form-wrap .input-field input {
+    width: 100%;
+    padding: 15px 30px;
+    border: hsl(246, 25%, 77%) 1px solid;
+    border-radius: 5px;
+}
+.form-wrap .input-field input::placeholder {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.form-wrap .btn-green {
+    background-color: hsl(154, 59%, 51%);
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 30px;
+    border: hsl(246, 25%, 77%) 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    text-transform:uppercase;
+}
+
+.form-wrap .form-footer {
+    color: hsl(246, 25%, 77%);
+    font-size: 9px;
+    text-align: center;
+    margin-top: 10px;
+}
+    
+}
