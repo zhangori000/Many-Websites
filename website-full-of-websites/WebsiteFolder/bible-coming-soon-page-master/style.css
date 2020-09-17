@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --light-weight-color: hsl(0, 0%, 59%);
+    --color-0:  hsl(223, 87%, 63%);
+    --color-1: hsl(354, 100%, 66%);
+    --color-2: hsl(223, 100%, 88%);
+    --heavy-weight-color: hsl(209, 33%, 12%);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h1 {
+    color: var(--heavy-weight-color);
+}
+
+h1 span{
+    font-weight: 300;
+    color: var(--light-weight-color);
+}
+
+h4 {
+    font-weight: 500;
+    margin-top: -15px;
+    font-size: 16px;
+}
+
+.overall-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    padding: 30px 180px;
+}
+
+
+
+.text-box-1 {
+    width: 450px;
+}
+
+
+form {
+    margin-bottom: 50px;
+}
+
+.mini-flex-container {
+    display: flex;
+    width: 500px;
+}
+form input {
+    flex: 7;
+    padding: 13px 20px;
+    border-radius: 250px;
+    border: 1.5px solid hsl(223, 100%, 88%);
+    width: 100%;
+
+}
+form input::placeholder {
+    color: hsl(0, 0%, 71%);
+}
+
+form button {
+    flex: 2.5;
+    margin-left: 10px;
+    padding: 13px 20px;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    border-radius: 250px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    box-shadow: 0px 5px 5px hsla(223, 87%, 63%, 0.5);
+}
+
+
+.logo-container {
+    width: 200px;
+}
+
+.image-container {
+    background-image: url('images/bible-infographic.png');
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 350px;   
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+
+.social-container {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.fa-facebook {
+    margin: 0 6px;
+    padding: 10px;
+    border: 1px solid var(--light-weight-color);
+    border-radius: 500px;
+    color: var(--color-0);
+}
+
+.fa-twitter {
+    margin: 0 6px;
+    padding: 10px;
+    border: 1px solid var(--light-weight-color);
+    border-radius: 500px;
+    color: var(--color-0);
+}
+.fa-instagram {
+    margin: 0 6px;
+    padding: 10px;
+    border: 1px solid var(--light-weight-color);
+    border-radius: 500px;
+    color: var(--color-0);
+}
+
+.footer-container {
+    color: var(--light-weight-color);
+}
+
+small {
+    display: block;
+    margin-top: 15px;
+}
