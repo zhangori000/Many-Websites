@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    
+}
+header {
+    margin: 50px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.primary-header {
+    color: hsl(234, 12%, 34%);
+}
+
+.primary-header span {
+    color:hsl(234, 12%, 34%);
+}
+.card-header {
+    color: hsl(234, 12%, 34%);
+    font-weight: 400;
+}
+#first-header {
+    font-weight: 200;
+}
+#first-header span{
+    font-weight: 600;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+img {
+    max-width: 100px;
+}
+
+
+
+.main-textbox {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 2rem;
+    justify-content: center;
+    align-content:center;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+.card {
+    position: relative;
+    background-color: #fff;
+    margin: 15px;
+    padding: 30px;
+    overflow: hidden;
+    width: 350px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05), 
+    0 6px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.card::after {
+    content: '';
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+}
+
+#card-1::after {
+    background-color: hsl(0, 78%, 62%);
+}
+#card-2::after {
+    background-color: hsl(180, 62%, 55%);
+}
+#card-3::after {
+    background-color: hsl(34, 97%, 64%);
+}
+#card-4::after {
+    background-color: hsl(212, 86%, 64%);
+}
+
+.card-push-down {
+    transform: translateY(50%);
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.card img {
+    display: block;
+    margin-left: auto;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 15px 0 30px;
+}
+.card-header {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+@media(max-width: 770px)
+{
+.card-push-down {
+    transform: translateY(0);
+}
+}
