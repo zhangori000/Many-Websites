@@ -34,7 +34,7 @@ body {
 }
 
 .inner-container {
-    
+    margin: auto;
     padding: 55px 100px;
     height: 100vh;
     max-width: 600px;
@@ -100,6 +100,8 @@ input::placeholder {
 }
 
 button {
+    cursor: pointer;
+    outline: none;
     position: absolute;
     transition: opacity 0.2s ease;
     background-image: linear-gradient(135deg, 
@@ -117,8 +119,15 @@ button:hover {
     opacity: 0.6;
 }
 
-.form.error input {
-    border: 2px solid hsl(0, 36%, 70%);
+form.error input {
+    border: 3px solid hsl(41, 100%, 52%);
+
+}
+form.error .error-icon {
+    display: block;
+}
+form.error small {
+    display: block;
 }
 .error-icon {
     display: none;
@@ -160,10 +169,10 @@ small {
     .logo {
         
         
-        margin-top: 20px;
-        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 12px;
         width: 180px;
-        margin-right: 300px;
+        
     }
     .left {
         width: 100%;
@@ -175,11 +184,12 @@ small {
         display: none;
         flex: 0;
     }
-    .inner-container {
     
+    .inner-container {
+        margin: auto;
         padding: 10px 55px;
         height: 100vh;
-        max-width: 600px;
+        max-width: 768px;
     }
     .bg-image-mobile-container {
         background-image: url('images/bible-photo2.jpg');
@@ -191,6 +201,16 @@ small {
         margin-bottom: 10px;
         margin-right: -55px;
         margin-left: -55px;
+    }
+    form input {
+        height: 40px;
+    }
+    form button {
+        height: 40px;
+        width: 50px;
+    }
+    form input::placeholder {
+        font-size: 12px;
     }
     h1 {
         font-size: 35px;

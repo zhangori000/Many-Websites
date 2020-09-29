@@ -24,11 +24,13 @@
         <span class="light-text">We are launching</span> soon!
       </h1>
       <h4>Subscribe and get notified</h4>
-      <form action="#">
+      <form action="#" id="form">
         <div class="mini-flex-container">
-          <input type="email" placeholder="Your email address">
+          <input id='email' type="email" placeholder="Your email address">
           <button class="btn-primary">Notify Me</button>
         </div>
+        <small class="bad-email">Please provide a valid email address</small>
+        <small class="empty-email">Please don't leave empty</small>
       </form>
     </div>
     <div class="image-container">
@@ -44,6 +46,8 @@
        <small>&copy; Copyright Ping. All rights reserved. </small>
     </div>
   </div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
